@@ -23,4 +23,4 @@ steps:
     jobName: 'dotnet-core'
     captureConsole: true
     capturePipeline: true
-    isParameterizedJob: false
+    isParameterizedJob: true
