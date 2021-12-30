@@ -17,3 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: JenkinsQueueJob@2
+  inputs:
+    serverEndpoint: 'Jenkins-to-azure-devops'
+    jobName: 'dotnet-core'
+    captureConsole: true
+    capturePipeline: true
+    isParameterizedJob: false
